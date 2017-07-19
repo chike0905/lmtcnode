@@ -6,12 +6,12 @@ html(lang='en')
     meta(name='keywords', content='Layout my Torturechamber,lmtc,バンド,band')
     meta(name='description', content='エレクトロコアバンドLayout my Torturechamber公式HP 音源、ライブ情報など')
     meta(name='viewport', content='width=device-width,initial-scale=1')
-    link(rel='stylesheet', href='style/basscss.css')
-    link(rel='stylesheet', href='style/style.css')
+    link(rel='stylesheet', href='stylesheets/basscss.css')
+    link(rel='stylesheet', href='stylesheets/style.css')
     link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed', rel='stylesheet', type='text/css')
-    script(type='text/javascript', src='./js/jquery.js')
-    script(type='text/javascript', src='./js/feedin.js')
-    script(type='text/javascript', src='./js/nav.js')
+    script(type='text/javascript', src='/javascripts/jquery.js')
+    script(type='text/javascript', src='/javascripts/feedin.js')
+    script(type='text/javascript', src='/javascripts/nav.js')
     script(type='text/javascript').
       $(document).ready(function() {
       $('#top').scrollInTurn({
@@ -58,7 +58,7 @@ html(lang='en')
     article#top
       .target
       #photo
-        img(src='./img/top.jpg', alt='Layout my Torturechamber', style='width:100%')
+        img(src='/images/top.jpg', alt='Layout my Torturechamber', style='width:100%')
       #news.clearfix.py1.px3
         .h1
           | 2017.06.16 SHINJUKU CLUB SCIENCE
@@ -68,7 +68,7 @@ html(lang='en')
           | Layout my Torturechamber / GO FIGHT GOOD FIGHTERS / WHEN LYLA BRIDE / MUROCK O`CLOCK / FOOLiGANS / EM DOWN
           br
           |         OPEN 17:30 START 18:00  ADV ¥2000 DOOR TBA
-        img(src='./img/flyer.jpg', alt='restart')
+        img(src='/images/flyer.jpg', alt='restart')
       #music.px4.py1.center
         h2 Music
         h3 1st Music Video "wrist"
