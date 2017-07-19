@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang='ja')
   head
     meta(charset='UTF-8')
     title Layout my Torturechamber Official Web Cite
@@ -64,27 +64,29 @@ html(lang='en')
         img(src='/images/top.jpg', alt='Layout my Torturechamber', style='width:100%')
       #news.clearfix.py1.px3
         h2 News
-      #live.clearfix.py1.px3
+        #live.clearfix.py1.px3
         h2 Live
-        table.table-light.col-8.mx-auto
+        - for (var i = 0; i < live.length; i++) {
+        table.table-light.col-8.mx-auto.mb3
           tr
             th.col-2 Date
-            th.col-10 2017/8/15(Thu.)
+            th.col-10 #{live[i].date}
           tr
             th.col-2 Title
-            th.col-10 Nobody Dies A Virgin,InFix,ANTIKNOCK pre.【Exist Episodes】
+            th.col-10 #{live[i].title}
           tr
             th.col-2 Venue
-            th.col-10 Shinjuku ANTIKNOCK
+            th.col-10 #{live[i].venue}
           tr
             th.col-2 Bands
-            th.col-10 Layout my Torturechamber / Nobody Dies A Virgin / InFix / MASRAO / GIVEN BY THE FLAMES / おしゃめがね / EJECTS
+            th.col-10 #{live[i].bands}
           tr
             th.col-2 OPEN/START
-            th.col-10 17:30/18:00
+            th.col-10 #{live[i].open} / #{live[i].start}
           tr
             th.col-2 ADV/DOOR
-            th.col-10 2000yen/2500yen
+            th.col-10 #{live[i].adv} / #{live[i].door}
+        - }
         #music.px4.py1.center
         h2 Music
         h3 Catch Me If You Can
