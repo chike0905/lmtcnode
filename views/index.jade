@@ -17,6 +17,7 @@ html(lang='en')
       $('#top').scrollInTurn({
       fadeInSpeed:1000
       });
+      $('#live').scrollInTurn();
       $('#music').scrollInTurn();
       $('#contact').scrollInTurn();
       $('#head').scrollInTurn();
@@ -52,6 +53,8 @@ html(lang='en')
         .flex-auto
           a.btn.white.navbtn(href='#news') News
         .flex-auto
+          a.btn.white.navbtn(href='#live') Live
+        .flex-auto
           a.btn.white.navbtn(href='#music') Music
         .flex-auto
           a.btn.white.navbtn(href='#contact') Contact
@@ -60,16 +63,29 @@ html(lang='en')
       #photo
         img(src='/images/top.jpg', alt='Layout my Torturechamber', style='width:100%')
       #news.clearfix.py1.px3
-        .h1
-          | 2017.06.16 SHINJUKU CLUB SCIENCE
-          br
-          |          Restart
-        .h2
-          | Layout my Torturechamber / GO FIGHT GOOD FIGHTERS / WHEN LYLA BRIDE / MUROCK O`CLOCK / FOOLiGANS / EM DOWN
-          br
-          |         OPEN 17:30 START 18:00  ADV ¥2000 DOOR TBA
-        img(src='/images/flyer.jpg', alt='restart')
-      #music.px4.py1.center
+        h2 News
+      #live.clearfix.py1.px3
+        h2 Live
+        table.table-light.col-8.mx-auto
+          tr
+            th.col-2 Date
+            th.col-10 2017/8/15(Thu.)
+          tr
+            th.col-2 Title
+            th.col-10 Nobody Dies A Virgin,InFix,ANTIKNOCK pre.【Exist Episodes】
+          tr
+            th.col-2 Venue
+            th.col-10 Shinjuku ANTIKNOCK
+          tr
+            th.col-2 Bands
+            th.col-10 Layout my Torturechamber / Nobody Dies A Virgin / InFix / MASRAO / GIVEN BY THE FLAMES / おしゃめがね / EJECTS
+          tr
+            th.col-2 OPEN/START
+            th.col-10 17:30/18:00
+          tr
+            th.col-2 ADV/DOOR
+            th.col-10 2000yen/2500yen
+        #music.px4.py1.center
         h2 Music
         h3 1st Music Video "wrist"
         .movie-wrap
