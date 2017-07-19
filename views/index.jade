@@ -1,5 +1,94 @@
-extends layout
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Layout my Torturechamber Official Web Cite
+    meta(name='keywords', content='Layout my Torturechamber,lmtc,バンド,band')
+    meta(name='description', content='エレクトロコアバンドLayout my Torturechamber公式HP 音源、ライブ情報など')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    link(rel='stylesheet', href='style/basscss.css')
+    link(rel='stylesheet', href='style/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed', rel='stylesheet', type='text/css')
+    script(type='text/javascript', src='./js/jquery.js')
+    script(type='text/javascript', src='./js/feedin.js')
+    script(type='text/javascript', src='./js/nav.js')
+    script(type='text/javascript').
+      $(document).ready(function() {
+      $('#top').scrollInTurn({
+      fadeInSpeed:1000
+      });
+      $('#music').scrollInTurn();
+      $('#contact').scrollInTurn();
+      $('#head').scrollInTurn();
+      });
+    style.
+      .fixed {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10000;
+      }
+      @media screen and (max-width:800px){
+      .movie-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+      }
+      .movie-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+      }
+  body.black.bg-white.center
+    nav.clearfix.py2.bg-darken-3.fixed.sm-show
+      .sm-flex.center.nowrap
+        .flex-auto
+          a.btn.btn-primary.black.bg-white.navbtn(href='#top') Top
+        .flex-auto
+          a.btn.white.navbtn(href='#news') News
+        .flex-auto
+          a.btn.white.navbtn(href='#music') Music
+        .flex-auto
+          a.btn.white.navbtn(href='#contact') Contact
+    article#top
+      .target
+      #photo
+        img(src='./img/top.jpg', alt='Layout my Torturechamber', style='width:100%')
+      #news.clearfix.py1.px3
+        .h1
+          | 2017.06.16 SHINJUKU CLUB SCIENCE
+          br
+          |          Restart
+        .h2
+          | Layout my Torturechamber / GO FIGHT GOOD FIGHTERS / WHEN LYLA BRIDE / MUROCK O`CLOCK / FOOLiGANS / EM DOWN
+          br
+          |         OPEN 17:30 START 18:00  ADV ¥2000 DOOR TBA
+        img(src='./img/flyer.jpg', alt='restart')
+      #music.px4.py1.center
+        h2 Music
+        h3 1st Music Video "wrist"
+        .movie-wrap
+          iframe(width='560', height='315', src='https://www.youtube.com/embed/mykE-93Uc0Y', frameborder='0', allowfullscreen='')
+        h3 Truth Calling
+        iframe(width='100%', height='166', scrolling='no', frameborder='no', src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269962844%3Fsecret_token%3Ds-OId00&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false')
+        h3 All in me
+        iframe(width='100%', height='166', scrolling='no', frameborder='no', src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267452319%3Fsecret_token%3Ds-hz4tg&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false')
+        h3 Sunset maybe I said
+        iframe(width='100%', height='166', scrolling='no', frameborder='no', src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269962850%3Fsecret_token%3Ds-zkowM&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false')
+        h3 Hero of the day
+        iframe(width='100%', height='166', scrolling='no', frameborder='no', src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269962854%3Fsecret_token%3Ds-TwXKR&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false')
+        h3 Monster of Grimm’s Fairy tales
+        iframe(width='100%', height='166', scrolling='no', frameborder='no', src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269962853%3Fsecret_token%3Ds-52dKX&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false')
+      #contact.py2.px3.center
+        h2 Contact
+        h3 Mail : lmtc_band[at]gmail.com
+    footer.clearfix.py3
+      .clearfix
+        #copyright.px3.right
+          | &copy Layout my Torturechamber
 
-block content
-  h1= title
-  p Welcome to #{title}
