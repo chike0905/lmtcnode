@@ -1,0 +1,30 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='UTF-8')
+    title Layout my Torturechamber Official Web Cite
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    link(rel='stylesheet', href='stylesheets/basscss.css')
+    link(rel='stylesheet', href='stylesheets/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed', rel='stylesheet', type='text/css')
+    script(type='text/javascript', src='/javascripts/jquery.js')
+  body.black.bg-white.center
+    h1 ライブ情報登録
+    form(method="post", action="/livesubmit").col-8.mx-auto
+      |Date:
+      input(type="text",name="date").block.col-12.field.mb2
+      |Title:
+      input(type="text",name="title").block.col-12.field.mb2
+      |Venue:
+      input(type="text",name="venue").block.col-12.field.mb2
+      |Bands:
+      input(type="text",name="bands").block.col-12.field.mb2
+      |OPEN:
+      input(type="text",name="open").block.col-12.field.mb2
+      |START:
+      input(type="text",name="start").block.col-12.field.mb2
+      |ADV:
+      input(type="text",name="adv").block.col-12.field.mb2
+      |DOOR:
+      input(type="text",name="door").block.col-12.field.mb2
+      input(type="submit" value="登録").btn.btn-primary
